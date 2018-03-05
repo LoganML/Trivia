@@ -35,15 +35,15 @@ $(document).ready(function() {
 /*
 	var trivia = {
 		questions: [			1.)"What was the first console video game that allowed the game to be saved?"
-								2.)'The first person shooter video game Doom was first released during what year?',
+								2.)'The first person shooter video game "Doom" was first released during what year?',
 								3.)'In what year did Nintendo release its first game console in North America?',
 								4.)'In what year was the Nintendo 64 officially released?',
-								5.)'In the game "Metal Gear Solid", who is the twin brother of Solid Snake?',
-								6.)'In 1981 a Disney constructed WED-Way People Mover opened at which airport?',
-								'What school is attended in the Disney Channel Series, Girl Meets World?',
-								'Which Walt Disney World location opened on the same day as the Disney-MGM Studios theme park on May 1, 1989?',
-								'Which of the following films is NOT part of the Walt Disney Studios Silly Symphonies?',
-								'Which wartime activity did the Walt Disney Studios partake in to support the American war effort?'],
+								5.)'In the game "Metal Gear Solid", who is the twin brother of Solid Snake?'
+								6.)'In the game "Mortal Kombat", what phrase is heard when Scorpion uses his spear?',
+								7.)'What is the name of the fictional english archaeologist in the game "Tomb Raider"?',
+								8.)'The Covenant are a fictional alien race from which game series?',
+								9.)'You're name is Jack and you are in an underwater city named Rapture, what game is this?',
+								10.)'Gabriel Belmon, grandfather of Simon, gets to ride giant spiders during the Middle Ages in a bid to defeat the Lords of Shadow in what popular series?'],
 		q1: ['A. The Legend of Zelda',
 				 'B. Donkey Kong',
 				 'C. Ikari Warriors',
@@ -64,26 +64,26 @@ $(document).ready(function() {
 				 'B. Gray Fox',
 				 'C. Liquid Snake',
 				 'D. Big Boss'],
-		q6: ['A. Houston Intercontinental Airport',
-				 'B. Orlando International Airport',
-				 'C. Atlanta International Airport',
-				 'D. Dallas/Ft. Worth International Airport'],
-		q7: ['A. Vintage High School',
-				 'B. Peyton Middle School',
-				 'C. John Quincy Adams Middle School',
-				 'D. Washington High School'],
-		q8: ['A. Typhoon Lagoon',
-				 'B. Pleasure Island',
-				 'C. Both A & B',
+		q6: ['A. Come Here! ',
+				 'B. Come to me! ',
+				 'C. Your soul is mine! ',
+				 'D. Get over here!'],
+		q7:['A. Jill Valentine',
+				 'B. Faith Connors',
+				 'C. Meryl Silverburgh',
+				 'D. Laura Croft'],
+		q8: ['A. Halo',
+				 'B. Fallout ',
+				 'C. XCOM',
 				 'D. None of the above'],
-		q9: ['A. The Night Before Christmas',
-				 'B. Three Little Pigs',
-				 'C. The Old Mill',
-				 'D. The Gallopin\' Gaucho'],
-		q10: ['A. Recycling used film footage',
-				  'B. Designing US Army & US Navy insignia',
-				  'C. Hosted a Studio Victory Garden where employees grew food for their families',
-				  'D. Forced employees to carpool by closing parking lots to non-carpool cars']		 						
+		q9: ['A. Subnautica',
+				 'B. Diluvion',
+				 'C. Undertow',
+				 'D. None of the above'],
+		q10: ['A. Salt Sanctuary',
+				  'B. Castlevania',
+				  'C. Hollow Knight',
+				  'D. Vampire: Master of Darkness']		 						
 	}
 */
 var correct = 0;
@@ -99,7 +99,7 @@ var q1 = {
 };
 
 var q2 = {
-	question: "The first person shooter video game Doom was first released during what year?",
+	question: 'The first person shooter video game "Doom" , was first released during what year?',
 	possibleAnswers: ['A. 1992',
 				 'B. 1995',
 				 'C. 1990',
@@ -139,53 +139,53 @@ var q5 = {
 };
 
 var q6 = {
-	question : '',
-	possibleAnswers : ['A. ',
-				 'B. ',
-				 'C. ',
-				 'D. '],
-	flags : [true, false, false, false],
-	answer : 'A. '
+	question : 'In the game "Mortal Kombat", what phrase is heard when Scorpion uses his spear',
+	possibleAnswers : ['A. Come Here! ',
+				 'B. Come to me! ',
+				 'C. Your soul is mine! ',
+				 'D. Get over here!'],
+	flags : [false, false, false, true],
+	answer : 'D. '
 };
 
 var q7 = {
-	question : 'What school is attended in the Disney Channel Series, Girl Meets World?',
-	possibleAnswers : ['A. Vintage High School',
-				 'B. Peyton Middle School',
-				 'C. John Quincy Adams Middle School',
-				 'D. Washington High School'],
-	flags : [false, false, true, false],
-	answer : 'C. John Quincy Adams Middle School'
+	question : 'What is the name of the fictional english archaeologist in the game "Tomb Raider"?',
+	possibleAnswers : ['A. Jill Valentine',
+				 'B. Faith Connors',
+				 'C. Meryl Silverburgh',
+				 'D. Laura Croft'],
+	flags : [false, false, false, true],
+	answer : 'D. '
 };
 
 var q8 = {
-	question : 'Which Walt Disney World location opened on the same day as the Disney-MGM Studios theme park on May 1, 1989?',
-	possibleAnswers : ['A. Typhoon Lagoon',
-				 'B. Pleasure Island',
-				 'C. Both A & B',
+	question : 'The Covenant are a fictional alien race from which game series?',
+	possibleAnswers :['A. Halo',
+				 'B. Fallout ',
+				 'C. XCOM',
 				 'D. None of the above'],
-	flags : [false, true, false, false],
-	answer : 'B. Pleasure Island'
+	flags : [true, false, false, false],
+	answer : 'A. Halo'
 };
 
 var q9 = {
-	question : 'Which of the following films is NOT part of the Walt Disney Studios Silly Symphonies?',
-	possibleAnswers : ['A. The Night Before Christmas',
-				 'B. Three Little Pigs',
-				 'C. The Old Mill',
-				 'D. The Gallopin\' Gaucho'],
+	question : 'Your name is Jack and you are in an underwater city named Rapture, what game is this?',
+	possibleAnswers : ['A. Subnautica',
+				 'B. Diluvion',
+				 'C. Undertow',
+				 'D. None of the above'],
 	flags : [false, false, false, true],
-	answer : 'D. The Gallopin\' Gaucho'
+	answer : 'D. None of the above'
 };
 
 var q10 = {
-	question : 'Which wartime activity did the Walt Disney Studios partake in to support the American war effort?',
-	possibleAnswers : ['A. Recycling used film footage',
-				  'B. Designing US Army & US Navy insignia',
-				  'C. Hosted a Studio Victory Garden where employees grew food for their families',
-				  'D. Forced employees to carpool by closing parking lots to non-carpool cars'],
+	question : 'Gabriel Belmon, grandfather of Simon, gets to ride giant spiders during the Middle Ages in a bid to defeat the Lords of Shadow in what popular series?',
+	possibleAnswers : ['A. Salt Sanctuary',
+				  'B. Castlevania',
+				  'C. Hollow Knight',
+				  'D. Vampire: Master of Darkness']	,
 	flags : [false, true, false, false],
-	answer : 'B. Designing US Army & US Navy insignia'
+	answer : 'B. Castlevania'
 }
 
 var questionArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
