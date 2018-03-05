@@ -32,60 +32,7 @@ $(document).ready(function() {
 			}
 		}
 	};
-/*
-	var trivia = {
-		questions: [			1.)"What was the first console video game that allowed the game to be saved?"
-								2.)'The first person shooter video game "Doom" was first released during what year?',
-								3.)'In what year did Nintendo release its first game console in North America?',
-								4.)'In what year was the Nintendo 64 officially released?',
-								5.)'In the game "Metal Gear Solid", who is the twin brother of Solid Snake?'
-								6.)'In the game "Mortal Kombat", what phrase is heard when Scorpion uses his spear?',
-								7.)'What is the name of the fictional english archaeologist in the game "Tomb Raider"?',
-								8.)'The Covenant are a fictional alien race from which game series?',
-								9.)'You're name is Jack and you are in an underwater city named Rapture, what game is this?',
-								10.)'Gabriel Belmon, grandfather of Simon, gets to ride giant spiders during the Middle Ages in a bid to defeat the Lords of Shadow in what popular series?'],
-		q1: ['A. The Legend of Zelda',
-				 'B. Donkey Kong',
-				 'C. Ikari Warriors',
-				 'D. Metroid'],
-		q2: ['A. 1992',
-				 'B. 1995',
-				 'C. 1990',
-				 'D. 1993'],
-		q3: ['A. 1990',
-				 'B. 1992',
-				 'C. 1983',
-				 'D. 1985'],
-		q4: ['A. 1994',
-				 'B. 1996',
-				 'C. 1990',
-				 'D. 1989'],
-		q5: ['A. Otacon',
-				 'B. Gray Fox',
-				 'C. Liquid Snake',
-				 'D. Big Boss'],
-		q6: ['A. Come Here! ',
-				 'B. Come to me! ',
-				 'C. Your soul is mine! ',
-				 'D. Get over here!'],
-		q7:['A. Jill Valentine',
-				 'B. Faith Connors',
-				 'C. Meryl Silverburgh',
-				 'D. Laura Croft'],
-		q8: ['A. Halo',
-				 'B. Fallout ',
-				 'C. XCOM',
-				 'D. None of the above'],
-		q9: ['A. Subnautica',
-				 'B. Diluvion',
-				 'C. Undertow',
-				 'D. None of the above'],
-		q10: ['A. Salt Sanctuary',
-				  'B. Castlevania',
-				  'C. Hollow Knight',
-				  'D. Vampire: Master of Darkness']		 						
-	}
-*/
+
 var correct = 0;
 var wrong = 0;
 var q1 = {
