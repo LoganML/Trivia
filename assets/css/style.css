@@ -1,0 +1,50 @@
+body {
+	background-color: white;
+}
+
+button {
+	width: 80%;
+	height: 40px;
+	margin: 0 10%;
+	float: left;
+}
+
+button.answerchoice {
+	display: none;
+}
+
+button:hover {
+	background-color: blue;
+	color: white;
+}
+
+.answers div {
+	margin: 0 auto;
+}
+#wrapperHearder{
+	position: relative;;
+	background-image: url(images/video.jpg);
+
+}
+#header{
+	left: 50%;
+	margin-left: -500px;
+	
+}
+
+img {
+	height: 200px;
+	width: auto;
+	margin-right: 200px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 100px;	
+	margin-top: 0;
+	position: relative;
+	align-self: center;
+	
+}
+
+h1, h2, h3, .question {
+	text-align: center;
+}
