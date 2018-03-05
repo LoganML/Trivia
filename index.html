@@ -36,11 +36,20 @@
 			</div>
 			<div>
 				<button class="answerchoice" id="buttonD"><h4>D</h4></button>
+				<button id="fullReset">Full Reset</button>
 			</div>
 		</div>
 	</div>
 
 		<script src="assets/javascript/app.js"></script>
+		<script>
+			var fullReset = document.getElementById('fullReset');
+
+    fullReset.addEventListener('click', function(e) {
+      location.reload();
+    }, false);
+  </script>
+
 
 	</body>
 </html>
