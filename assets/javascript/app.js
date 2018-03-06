@@ -1,3 +1,8 @@
+// game refresh wasnt working when I tried to impliment my full reset button, I think it has to do with scope. plan is to inline in html for now..
+
+//some code segments are commented out because they dont work correctly
+
+//sets up and clears our count down timer 
 $(document).ready(function() {
 	var index = 0;
 	var countdownTimer = {
@@ -32,7 +37,7 @@ $(document).ready(function() {
 			}
 		}
 	};
-
+// I wanted to set up my questions as different variables with their own values
 var correct = 0;
 var wrong = 0;
 var q1 = {
@@ -136,7 +141,7 @@ var q10 = {
 }
 
 var questionArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
-
+//  loads our questions, wiith "ABCD" buttons
 function loadQuestion(questionSelection) {
 	console.log(questionSelection);
 	countdownTimer.reset();
@@ -145,14 +150,10 @@ function loadQuestion(questionSelection) {
   $("#buttonB").text(questionArray[questionSelection].possibleAnswers[1]).show();
   $("#buttonC").text(questionArray[questionSelection].possibleAnswers[2]).show();
   $("#buttonD").text(questionArray[questionSelection].possibleAnswers[3]).show();
-//  getAnswer();  
-//  nextQuestion(index);
+
 }
 
-//function nextQuestion() {
-//	index = index++;
-//	console.log(index);
-//}
+
 
 function setup() {
 	index = 0;
@@ -223,6 +224,7 @@ function showScore() {
 //	$('#startButton').click(countdownTimer.start);
 
 //}
+//else if statements to determine correcet vs incorrect answers for all possible values of "ABCD"
 setup();
 $('.answerchoice').on('click', function() {
  console.log($(this));
@@ -255,7 +257,7 @@ if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
  } else if (answerChosen == 'D') {
  	answerWrong();
  }
-
+//show score after we run through all our questions(10)
  $(".question").text('');
  $("#buttonA").text('');
  $("#buttonB").text('');
